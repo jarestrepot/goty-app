@@ -1,0 +1,34 @@
+{
+  "__collections__": {
+    "goty": {
+      "DrangonBall": {
+        "name": "Drangon Ball Budokai",
+        "id": "DrangonBall",
+        "url": "https://i.blogs.es/9524c4/dragon-ball-budokai-tenkaichi-4/500_333.jpeg",
+        "votes": 90,
+        "__collections__": {}
+      },
+      "LastOfus": {
+        "name": "Last Of Us",
+        "id": "LastOfus",
+        "url": "https://media.vandal.net/m/15/154258/the-last-of-us-parte-ii-remasterizado-202311188242029_2.jpg",
+        "votes": 88,
+        "__collections__": {}
+      },
+      "Onepiece": {
+        "name": "One piece",
+        "id": "Onepiece",
+        "url": "https://www.mundodeportivo.com/alfabeta/hero/2021/04/La-historia-de-One-Piece-de-que-va-este-anime.jpg",
+        "votes": 94,
+        "__collections__": {}
+      },
+      "godof-war": {
+        "name": "God of War 4",
+        "id": "godof-war",
+        "url": "https://i.blogs.es/ee165a/gods-of-war-ragnarok-kratos-atreus-hd-wallpaper-1920x1080-uhdpaper.com-106.1_c/650_1200.webp",
+        "votes": 69,
+        "__collections__": {}
+      }
+    }
+  }
+}

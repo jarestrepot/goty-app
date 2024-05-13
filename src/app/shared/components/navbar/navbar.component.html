@@ -1,0 +1,23 @@
+<ul class="flex gap-3 mb-5 flex-col lg:flex-row  items-center">
+  @if (imgsrcSet()) {
+    <li>
+      <img
+        class="w-12 h-auto object-cover"
+        [srcset]="computedImage()"
+        [alt]="'HOME'"
+        title="Logo corporate"
+      >
+    </li>
+  }
+  @for (route of computedSignal(); track route.title; let i = $index ) {
+    <li
+      class="cursor-pointer hover:text-slate-300 hover:underline hover:underline-offset-4 duration-150 ease-in-out"
+      [routerLink]="route.path" routerLinkActive="text-blue-600"
+      [title]="route.title"
+    >
+      {{ route.title }}
+    </li>
+  }@empty {
+    <p class="text-red-400">Empty route..</p>
+  }
+</ul>

@@ -1,0 +1,17 @@
+<h1 class="text-4xl text-bold">Votes for the <span class="text-blue-600 underline underline-offset-4">Game of the year</span></h1>
+<section class="grid grdi-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-10 place-items-center">
+  @for (game of gamesOTY(); track game.id) {
+    <shared-card [cardValue]="game" (emitIdCard)="voteForGame($event)" #elementCard [id]="game.id"/>
+  }@empty {
+    <div>
+      <p>No game found</p>
+    </div>
+  }
+
+</section>
+<div class="w-full grid place-items-center mt-14">
+  <button
+    (click)="resetVotesGames()"
+    class="border ring-emerald-300 rounded p-2 hover:text-blue-400 hover:scale-110 ease-out duration-200 hover:border-blue-400"
+  >Reset Games</button>
+</div>

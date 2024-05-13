@@ -19,6 +19,20 @@
     "target": "ES2022",
     "module": "ES2022",
     "useDefineForClassFields": false,
+    "paths": {
+      "@pages/*": ["./src/app/pages/*"],
+      "@interfaces/*": ["./src/app/interfaces/*"],
+      "@core/*": ["./src/app/core/*"],
+      "@services/*": ["./src/app/services/*"],
+      "@shared/*": ["./src/app/shared/*"],
+      "@assets/*": ["./src/assets/*"],
+      "@environments/*": [
+        "./src/environments/*"
+      ],
+      "@helpers/*": [
+        "./src/app/helpers/*"
+      ],
+    },
     "lib": [
       "ES2022",
       "dom"

@@ -1,0 +1,40 @@
+<!-- GRAFICAS -->
+<div
+  class="chart-container grid h-[340px] mt-9"
+>
+
+  @if ( viewportWidthSignal() < 600 ) {
+    <ngx-charts-bar-vertical
+      [scheme]="colorScheme"
+      [results]="results"
+      [gradient]="gradient"
+      [xAxis]="showXAxis"
+      [yAxis]="showYAxis"
+      [legend]="showLegend"
+      [showXAxisLabel]="showXAxisLabel"
+      [showYAxisLabel]="showYAxisLabel"
+      [xAxisLabel]="xAxisLabel"
+      [yAxisLabel]="yAxisLabel"
+      (select)="onSelect($event)"
+      style="fill: grey"
+    >
+    </ngx-charts-bar-vertical>
+  } @else {
+    <ngx-charts-bar-horizontal
+      [scheme]="colorScheme"
+      [results]="results"
+      [gradient]="gradient"
+      [xAxis]="showXAxis"
+      [yAxis]="showYAxis"
+      [legend]="showLegend"
+      [showXAxisLabel]="showXAxisLabel"
+      [showYAxisLabel]="showYAxisLabel"
+      [xAxisLabel]="xAxisLabel"
+      [yAxisLabel]="yAxisLabel"
+      (select)="onSelect($event)"
+      style="fill: grey"
+    >
+    </ngx-charts-bar-horizontal>
+  }
+
+</div>
